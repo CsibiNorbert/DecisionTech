@@ -7,6 +7,7 @@ using PriceCalc.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace PriceCalc.Tests.BasketTests
 {
@@ -26,7 +27,7 @@ namespace PriceCalc.Tests.BasketTests
         }
 
         [Test]
-        public async System.Threading.Tasks.Task BasketHasOneOfEachProduct_ReturnOk()
+        public async Task BasketHasOneOfEachProduct_ReturnOk()
         {
             //Arrange
             List<BasketProductModel> expectedProducts = new List<BasketProductModel> {
@@ -97,7 +98,7 @@ namespace PriceCalc.Tests.BasketTests
         }
 
         [Test]
-        public async System.Threading.Tasks.Task BasketHasTwoBreadAndTwoButter_ReturnOk()
+        public async Task BasketHasTwoBreadAndTwoButter_ReturnOk()
         {
             //Arrange
             List<BasketProductModel> expectedProducts = new List<BasketProductModel> {
@@ -149,7 +150,7 @@ namespace PriceCalc.Tests.BasketTests
         }
 
         [Test]
-        public async System.Threading.Tasks.Task BasketHasOneFreeMilk_ReturnOk()
+        public async Task BasketHasOneFreeMilk_ReturnOk()
         {
             //Arrange
             List<BasketProductModel> productsModel = new List<BasketProductModel> {
@@ -193,7 +194,7 @@ namespace PriceCalc.Tests.BasketTests
         }
 
         [Test]
-        public async System.Threading.Tasks.Task BasketHasTwoButterOneBreadEightMilk_ReturnOk()
+        public async Task BasketHasTwoButterOneBreadEightMilk_ReturnOk()
         {
             //Arrange
             var butter = new BasketProductModel()
