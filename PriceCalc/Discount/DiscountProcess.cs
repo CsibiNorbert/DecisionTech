@@ -9,7 +9,7 @@ namespace PriceCalc.Discount
 {
     /// <summary>
     /// An Abstract class for the discounted products, here we can put pre-defined code for discounts or freebies.
-    /// Also, I created this class so that we can override methods in case each discount might behave in different way than other products etc.
+    /// I created this class so that we can override methods in case each discount might behave in different way than other products etc.
     /// </summary>
     public abstract class DiscountProcess
     {
